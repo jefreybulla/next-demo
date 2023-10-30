@@ -1,12 +1,14 @@
 <html>
   <body>
     <div id="app"></div>
-    <p>hi test</p>
-    <script type="text/javascript">
-        const app = document.getElementById('app')
-        const header = document.createElement('h1')
-        header.textContent = 'Hello World 1!'
-        app.appendChild(header)
-        </script>
+    <p>some text</p>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+      ReactDOM.render(<h1>Welcome!</h1>, app);
+    </script>
   </body>
 </html>
